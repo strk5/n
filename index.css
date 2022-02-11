@@ -1,0 +1,46 @@
+body {
+  background-color: #dcf6ff;
+  padding: 0px 30px;
+  font-family: "VT323", monospace;
+}
+
+a {
+  font-size: 18px;
+  color: rgb(0, 89, 223);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.grande {
+  font-size: 21px;
+}
+
+#aprender {
+  border: 5px solid rebeccapurple;
+  border-radius: 28px;
+  padding: 50px 20px; 
+  max-width: 400px;
+  margin: 15px auto;
+  background-color: rgb(192, 219, 192);
+  color: rgb(73, 21, 21);
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: overline;
+  text-align: center;
+  cursor: cell;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+#aprender:hover {
+  border: 5px solid rgb(54, 153, 51);
+  border-radius: 5px;
+  background-color: rgb(229, 219, 235);
+  color: rgb(23, 13, 167);
+  text-decoration: underline;
+  opacity: 0.5;
+}
