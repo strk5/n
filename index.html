@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- head: Metadata -->
+  <!-- Dentro de <head> está la metadata -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Principal</title>
     <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
   </head>
-  <!-- body: Contenido -->
-  <body>
-    <h1>Inicio</h1>
-    <nav>
-      <a href="/peru.html">Ir a Perú</a>
-      <a href="/contacto.html">Ir a Contacto</a>
-    </nav>
-    <div>
-      <h2>Datos:</h2>
-      <ul class="grande">
-        <li>Nombre: Cristopher</li>
-        <li>Edad: 100 años</li>
-        <li>Nacionalidad: Peruana</li>
-      </ul>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1593538327166-6cb8eb7e7a98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=75" alt="">
+  <body onload="empezarTiempo()" >
+    <header>
+      <div id="marca" >
+        <a href="/">Cristopher</a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/tarea.html">Tarea</a>
+          </li>
+          <li>
+            <a href="/imagenes.html">Imágenes</a>
+          </li>
+          <li>
+            <a href="/nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="celular" onclick="abrirMenu(this)" >
+        <div class="bar1" ></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="menu" >
+          <li>
+            <a href="/tarea.html">Tarea</a>
+          </li>
+          <li>
+            <a href="/imagenes.html">Imágenes</a>
+          </li>
+          <li>
+            <a href="/nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    </div>
+    <main>
+      <h2>Reloj</h2>
+      <p>El tiempo es <span id="manecillas" >El reloj va aquí</span></p>      
+    </main>
+
+    <script src="index.js"></script>
   </body>
 </html>

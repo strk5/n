@@ -1,0 +1,30 @@
+* {
+  background-color: gray;
+  font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto;
+}
+#grid img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

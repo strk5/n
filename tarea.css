@@ -1,0 +1,64 @@
+/* :root Aquí definimos nuestras Variables CSS Globales */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green: #b5f3ac;
+}
+
+/* El * es un selector Universal, significa que aplica para todos los elementos de la página */
+* {
+ color: var(--fontColor);
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+#msg {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 
+    nombre de variable: --black: #000
+    Dentro de var() pones el nombre de variable
+    var(--black) se transforma en #000
+*/
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.btn:focus {
+  outline-style: none;
+}

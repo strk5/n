@@ -1,46 +1,117 @@
-body {
-  background-color: #dcf6ff;
-  padding: 0px 30px;
-  font-family: "VT323", monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  font-size: 18px;
-  color: rgb(0, 89, 223);
+body {
+  background-color: #4e4e4e;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex; /* Flex Box */
+  justify-content: space-between;
+}
+
+header a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+#marca {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.grande {
-  font-size: 21px;
+#marca a {
+  color: #09c372;
 }
 
-#aprender {
-  border: 5px solid rebeccapurple;
-  border-radius: 28px;
-  padding: 50px 20px; 
-  max-width: 400px;
-  margin: 15px auto;
-  background-color: rgb(192, 219, 192);
-  color: rgb(73, 21, 21);
-  font-size: 30px;
-  font-weight: 300;
-  font-style: italic;
-  text-decoration: overline;
-  text-align: center;
-  cursor: cell;
-  letter-spacing: 20px;
-  text-transform: uppercase;
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#aprender:hover {
-  border: 5px solid rgb(54, 153, 51);
-  border-radius: 5px;
-  background-color: rgb(229, 219, 235);
-  color: rgb(23, 13, 167);
-  text-decoration: underline;
-  opacity: 0.5;
+ul a {
+  color: #fff;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+#celular {
+  display: none;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+#celular div {
+  height: 3px;
+  width: 35px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+/* margin: arriba derecha abajo izquierda */
+/* margin: top right bottom left */
+/*
+    margin: 0 0 10px 0;
+    margin-bottom: 10px;
+*/
+.menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  header nav {
+    display: none;
+  }
+  #celular {
+    display: block;
+  }
 }
